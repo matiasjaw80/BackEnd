@@ -6,26 +6,45 @@ class ProductManager {
     static id = 0;
     //agregar producto
     addProduct(title, description, price, image, code, stock){
-        for(let i = 0; i < this.products.length; i++) {
-            if(this.products[i].code === code){
-                console.log(`El codigo ${code} esta repetido`);
-                break;
+
+
+        //funcion si hay un duplicado
+        function hasDuplicateCode(products, code) {
+            // Usa el método some() para iterar y retornar al encontrar una coincidencia si code esta repetido
+            return products.some((product) => product.code === code);
+          }
+          
+          //asigno a const = asDuplicateCode
+          const duplicateFound = hasDuplicateCode(this.products, code);
+          
+          //si es verdadero que hay un duplicado
+          if (duplicateFound) {
+            console.log(`El código ${code} está repetido.`);
             }
-        }
-        //defino el objeto
+
+        // Usa for para iterar y retornar al encontrar una coincidencia si code esta repetido
+        // for (let i = 0; i < this.products.length; i++) {
+        //     if (this.products[i].code === code) {
+        //         console.log(`El codigo ${code} esta repetido`);
+        //         break;
+        //     }
+        //}
+
+        //defino el objeto newProduct
         const newProduct = {
-            title,
-            description,
-            price,
-            image,
-            code,
-            stock,
+             title,
+             description,
+             price,
+             image,
+             code,
+             stock,
         }
+
         //si no encuentro ningun dato faltante lo agrega
         if (!Object.values(newProduct).includes(undefined)) {
             ProductManager.id++
             this.products.push({
-                ...newProduct,
+                ...newProduct, //spread operator - llamo la funcion
                 id: ProductManager.id,
             });
         }else{
@@ -37,12 +56,12 @@ class ProductManager {
         return this.products;
         }
     
-    existe(id) {
+    exists(id) {
         return this.products.find((producto) => producto.id === id);
     }
 
     getProductsById(id) {
-        !this.existe(id) ? console.log("Not Found") : console.log(this.existe(id));
+        !this.exists(id) ? console.log("Not Found") : console.log(this.exists(id));
     }  
 }
 
