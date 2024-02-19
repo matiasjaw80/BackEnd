@@ -15,7 +15,7 @@ class ProductManager {
           }
           
           //asigno a const = asDuplicateCode
-          const duplicateFound = hasDuplicateCode(this.products, code);
+          const duplicateFound = (this.products, code);
           
           //si es verdadero que hay un duplicado
           if (duplicateFound) {
