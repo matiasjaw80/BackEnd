@@ -58,7 +58,7 @@
 
 <p align="left">Formato del entregable:</p>
     <p align="left">-Archivo de Javascript listo para ejecutarse desde node.</p>
-    <p align="left">-correr el comando node main.js en la Terminal de VS</p>
+    <p align="left">-correr el comando node testing.js en la Terminal de VS dentro de la carpeta Entrega XX</p>
 
 ###
 
