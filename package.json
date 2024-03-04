@@ -1,15 +1,31 @@
 {
-  
+  
   "name": "proyecto-final",
+  
   "version": "1.0.0",
+  
   "description": "Curso de Coderhouse \"Programación Backend\" con Node.js",
+  
   "main": "index.js",
+  
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  
+    
+  "test": "echo \"Error: no test specified\" && exit 1"
+  
   },
+  
   "author": "Werjman Matias",
+  
   "license": "ISC",
+  
   "dependencies": {
-    "nodemon": "^3.0.3"
+  
+    
+  "express": "^4.18.3",
+  
+    
+  "nodemon": "^3.0.3"
+  
   }
 }
