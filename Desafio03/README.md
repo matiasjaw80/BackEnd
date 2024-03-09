@@ -1,4 +1,4 @@
-# Desafío 4
+# Desafío 03
 
 ### Consignas
 
@@ -26,7 +26,7 @@ Aspectos a incluir
 
 ## Para probar puedes realizar lo siguiente
 
-1. Estar en el directorio de **'Entrega-3'**
+1. Estar en el directorio de **'Desafio03'**
 
 2. Instalar dependencias con: `npm install`
 

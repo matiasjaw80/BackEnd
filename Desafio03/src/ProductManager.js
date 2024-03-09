@@ -39,6 +39,7 @@ class ProductManager {
       );
     }
   }
+  
 
   async deleteById(id) {
     try {
@@ -131,6 +132,8 @@ class ProductManager {
     const data = await this.getData();
     return JSON.parse(data);
   }
+
+  
 }
 
 module.exports = ProductManager;
