@@ -1,0 +1,46 @@
+[
+	{
+		"title": "title3",
+		"description": "description3",
+		"code": "333",
+		"price": "3000",
+		"status": true,	
+		"stock": "33",
+		"category": "category03",
+		"thumbnail": "img03",
+		"id": 3
+	},
+	{
+		"title": "title4",
+		"description": "description4",
+		"code": "444",
+		"price": "4000",
+		"status": true,	
+		"stock": "44",
+		"category": "category04",
+		"thumbnail": "img04",
+		"id": 4
+	},
+	{
+		"title": "title6",
+		"description": "description6",
+		"code": "666",
+		"price": "6000",
+		"status": true,	
+		"stock": "66",
+		"category": "category06",
+		"thumbnail": "img06",
+		"id": 6
+	},
+	{
+		"title": "title7",
+		"description": "description7",
+		"code": "777",
+		"price": "7000",
+		"status": true,	
+		"stock": "77",
+		"category": "category07",
+		"thumbnail": "img07",
+		"id": 7
+	}
+]
